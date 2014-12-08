@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>zhgyms</display-name>
+	
+	<session-config>
+		<session-timeout>40</session-timeout> 
+	</session-config>
+
+	<!-- framework -->
+	<!-- data interaction -->
+	<servlet>
+		<servlet-name>dataInteraction</servlet-name>
+		<servlet-class>com.vincesu.framework.remote.servlet.DataInteractionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dataInteraction</servlet-name>
+		<url-pattern>/service/dataInteraction</url-pattern>
+	</servlet-mapping>
+
+<!-- 	<servlet> -->
+<!-- 		<servlet-name>ControllerServlet</servlet-name> -->
+<!-- 		<servlet-class>com.tornado.core.control.ControlServlet</servlet-class> -->
+<!-- 	</servlet> -->
+<!-- 	<servlet-mapping> -->
+<!-- 		<servlet-name>ControllerServlet</servlet-name> -->
+<!-- 		<url-pattern>*.do</url-pattern> -->
+<!-- 	</servlet-mapping> -->
+	<!-- file upload servlet -->
+	<servlet>
+		<description></description>
+		<display-name>fileUploadServlet</display-name>
+		<servlet-name>fileUploadServlet</servlet-name>
+		<servlet-class>com.vincesu.framework.remote.servlet.fileUploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fileUploadServlet</servlet-name>
+		<url-pattern>/service/fileUpload</url-pattern>
+	</servlet-mapping>
+	<!-- multiple file upload servlet -->
+	<servlet>
+		<description></description>
+		<display-name>mFileUploadServlet</display-name>
+		<servlet-name>mFileUploadServlet</servlet-name>
+		<servlet-class>com.vincesu.framework.remote.servlet.multipleFileUploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mFileUploadServlet</servlet-name>
+		<url-pattern>/service/mFileUpload</url-pattern>
+	</servlet-mapping>
+	<!-- file preview servlet -->
+	<servlet>
+		<description></description>
+		<display-name>filePreviewServlet</display-name>
+		<servlet-name>filePreviewServlet</servlet-name>
+		<servlet-class>com.vincesu.framework.remote.servlet.filePreviewServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>filePreviewServlet</servlet-name>
+		<url-pattern>/service/filePreview</url-pattern>
+	</servlet-mapping>
+	<!-- file preview servlet -->
+	<servlet>
+		<description></description>
+		<display-name>filePreviewServlet2</display-name>
+		<servlet-name>filePreviewServlet2</servlet-name>
+		<servlet-class>com.vincesu.framework.remote.servlet.filePreviewServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>filePreviewServlet2</servlet-name>
+		<url-pattern>/service/filePreview/*</url-pattern>
+	</servlet-mapping>
+	<!-- file download servlet -->
+	<servlet>
+		<description></description>
+		<display-name>fileDownloadServlet</display-name>
+		<servlet-name>fileDownloadServlet</servlet-name>
+		<servlet-class>com.vincesu.framework.remote.servlet.fileDownloadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>fileDownloadServlet</servlet-name>
+		<url-pattern>/service/fileDownload</url-pattern>
+	</servlet-mapping>
+	<!-- end of framework -->
+
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
