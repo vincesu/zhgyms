@@ -1,0 +1,35 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<form id="upload-form" action="service/fileUpload" method="post" enctype="multipart/form-data" >
+	<input type="file" id="upload" name="upload" />
+	<button type="submit">上传</button>
+	<div id="message"></div>
+</form>
+<form id="ProduceDialogForm">
+	<fieldset>
+		<legend>基本信息</legend>
+		<div><p class="label_long"></p><input type="hidden" name="id"><div style="clear:both"></div></div>
+		<div><p class="label_long">产品名称：</p><input type="text" name="name"><div style="clear:both"></div></div>
+		<div><p class="label_long">单号：</p><input type="text" name="number"><div style="clear:both"></div></div>
+		<div><p class="label_long">时间：</p><input type="text" class="Wdate" onfocus="WdatePicker({isShowWeek:true})" name="date"><div style="clear:both"></div></div>
+		<div><p class="label_long">发货时间：</p><input type="text" class="Wdate" onfocus="WdatePicker({isShowWeek:true})" name="deliveryTime"><div style="clear:both"></div></div>
+		<div><p class="label_long">业务员(不必填写)：</p><input type="text" readonly="readonly" name="salesman"><div style="clear:both"></div></div>
+		<div><p class="label_long">目的地：</p><input type="text" name="destination"><div style="clear:both"></div></div>
+		<div><p class="label_long"></p><input type="hidden" id="fileid" name="fileid"><div style="clear:both"></div></div>
+	
+		<div>
+		<table id="producefiletable">
+			<tr>
+				<td>
+					<img src="css/framework/img/unknow.gif">
+				</td>
+				<td>
+					<div id="producefilename" style="float:left;width:150px;">生产单附件</div>
+					<a href="###" style="margin-left:15px;" onclick="javascript:downloadProduceFile();">下载</a>
+					<a href="###" onclick="javascript:previewProduceFile();" style="margin-left:15px;">预览打印</a>
+				</td>
+			</tr>
+		</table>
+		</div>
+		
+	</fieldset>
+</form>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.vincesu.framework.entity">
+	<class
+		name="SysParam"
+		table="sys_param"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="Id"
+			type="java.lang.Long"
+			column="id"
+		>
+			<generator class="increment"/>
+		</id>
+
+		<property
+			name="Code"
+			column="code"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Value"
+			column="value"
+			type="string"
+			not-null="false"
+		/>
+		<property
+			name="Available"
+			column="available"
+			type="integer"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="Description"
+			column="description"
+			type="string"
+			not-null="false"
+			length="500"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

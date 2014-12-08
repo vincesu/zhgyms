@@ -1,0 +1,31 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<form id="upload-form" action="service/fileUpload" method="post" enctype="multipart/form-data" >
+	<input type="file" id="upload" name="upload" />
+	<button type="submit">上传</button>
+	<div id="message"></div>
+</form>
+<form id="MaterialsDialogForm">
+	<fieldset>
+		<legend>基本信息</legend>
+		<table>
+		<tr>
+			<td>
+				<div style="margin:5px 0px;"><p class="label"></p><input type="hidden" name="id"><div style="clear:both"></div></div>
+				<div style="margin:5px 0px;"><p class="label"></p><input type="hidden" name="number"><div style="clear:both"></div></div>
+				<div style="margin:5px 0px;"><p class="label">名称：</p><input type="text" id="MaterialsDialogName" name="name"><div style="clear:both"></div></div>
+				<div style="margin:5px 0px;"><p class="label">尺寸：</p><input type="text" name="size"><div style="clear:both"></div></div>
+				<div style="margin:5px 0px;"><p class="label">价格：</p><input type="text" name="price"><div style="clear:both"></div></div>
+				<div style="margin:5px 0px;"><p class="label">厂家：</p><input type="text" name="manufacturers"><div style="clear:both"></div></div>
+				<div style="margin:5px 0px;"><p class="label">联系人：</p><input type="text" name="contact"><div style="clear:both"></div></div>
+				<div style="margin:5px 0px;"><p class="label">电话：</p><input type="text" name="phone"><div style="clear:both"></div></div>
+				<div style="margin:5px 0px;"><p class="label">分类：</p><input class="combox" code="materialcategory" id="materialdialogcategory" type="text" ><div style="clear:both"></div></div>
+				<div style="margin:5px 0px;"><p class="label">其他分类：</p><input type="text" name="category"><div style="clear:both"></div></div>
+				<div style="margin:5px 0px;"><p class="label"></p><input type="hidden" id="fileid" name="fileid"><div style="clear:both"></div></div>
+			</td>
+			<td>
+				<img src="images/no-products.gif" name="path" id="imgpath" width="150px" height="150px" />
+			</td>
+		</tr>
+		</table>
+	</fieldset>
+</form>

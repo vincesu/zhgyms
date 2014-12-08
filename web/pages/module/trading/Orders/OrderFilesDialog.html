@@ -1,0 +1,16 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<form id="upload-form" action="service/fileUpload" method="post" enctype="multipart/form-data" >
+	<input type="file" id="upload" name="upload" />
+	<button type="submit">上传</button>
+	<div id="message"></div>
+</form>
+<form id="OrderFilesDialogForm">
+	<fieldset>
+		<legend>基本信息</legend>
+		<div><p class="label"></p><input type="hidden" id="id" name="id"><div style="clear:both"></div></div>
+		<div><p class="label"></p><input type="hidden" id="reserved" name="reserved"><div style="clear:both"></div></div>
+		<div><p class="label"></p><input type="hidden" id="orderid" name="orderid"><div style="clear:both"></div></div>
+		<div><p class="label">文件类型：</p><input type="text" class="combox" code="orderfilestype" name="relatedDescription2"><div style="clear:both"></div></div>
+		<div><p class="label">其他：</p><input type="text" name="relatedDescription"><div style="clear:both"></div></div>
+	</fieldset>
+</form>

@@ -1,0 +1,44 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="js/module/produce/addProduceMgr.js"></script>
+<div style="width:950px;">
+		<form id="addProduceForm">
+			<input name="id" type="hidden">
+			<input id="createproducefile" value="none" name="cpf" type="hidden">
+			<fieldset>
+				<legend>订单信息</legend>
+					<div><p class="label_long"></p><input id="add-product-id-input" type="hidden" name="id"><div style="clear:both"></div></div>
+					<div><p class="label_long"></p><input type="hidden" name="reserved"><div style="clear:both"></div></div>
+					<div>
+					<table width="100%">
+						<tr>
+<!-- 							<td><p class="label_long">名称：</p> -->
+<!-- 								<input name="name"> -->
+<!-- 								<div style="clear:both"></div> -->
+<!-- 							</td> -->
+							<td><p class="label_long">时间：</p><input type="text" class="Wdate" onfocus="WdatePicker({isShowWeek:true})" name="date"><div style="clear:both"></div></td>
+							<td><p class="label_long">合同单号：</p><input readonly="readonly" type="text" id="produceNumber" name="number"><a href="###" onclick="javascript:chooseContract();">选择合同</a><div style="clear:both"></div></td>
+							<td><p class="label_long">发货时间：</p><input type="text" class="Wdate" onfocus="WdatePicker({isShowWeek:true})" name="deliveryTime"><div style="clear:both"></div></td>
+						</tr>
+						<tr>
+							<td><p class="label_long">业务员(不必填写) </p><input type="text" readonly="readonly" name="salesman"><div style="clear:both"></div></td>
+							<td colspan="2"><p class="label_long">目的地：</p><input type="text" style="width:75%;" name="destination"><div style="clear:both"></div></td>
+						</tr>
+						<tr>
+							<td colspan="3"><p class="label_long">备注：</p><textarea style="width:80%;" name="remark"></textarea><div style="clear:both"></div></td>
+						</tr>
+					</table>
+					</div>
+					<div id="cus-produce" style="margin-left:20px;">
+					</div>
+			</fieldset>
+		</form>
+</div>
+<div class="toolbar">
+<a class="button3"  onclick="javascript:addP();" href="###"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>添加</span></a>
+<a class="button3"  onclick="javascript:addExtraProduce();" href="###"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>添加额外产品</span></a>
+<a class="button3"  onclick="javascript:deleteP();" href="###"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>删除</span></a>
+<a class="button3"  onclick="javascript:_addProduceRelatedFiles()();" href="###"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>导入生产单</span></a>
+<a class="button3"  onclick="javascript:finishP();" href="###"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>完成</span></a>
+</div>
+<table id="addProduceGrid"></table>
+<div id="addProducePager"></div>

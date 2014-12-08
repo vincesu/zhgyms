@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.vincesu.business.entity">
+	<class
+		name="ContractDetail"
+		table="contract_detail"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="Id"
+			type="java.lang.Long"
+			column="id"
+		>
+			<generator class="increment"/>
+		</id>
+
+		<property
+			name="ContractId"
+			column="contract_id"
+			type="java.lang.Long"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="ProductId"
+			column="product_id"
+			type="java.lang.Long"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Number"
+			column="number"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Description"
+			column="description"
+			type="string"
+			not-null="false"
+			length="1000"
+		/>
+		<property
+			name="Qty"
+			column="qty"
+			type="integer"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="Unit"
+			column="unit"
+			type="java.lang.Double"
+			not-null="false"
+			length="22"
+		/>
+		<property
+			name="Amount"
+			column="amount"
+			type="java.lang.Double"
+			not-null="false"
+			length="22"
+		/>
+		<property
+			name="Remark"
+			column="remark"
+			type="string"
+			not-null="false"
+			length="1000"
+		/>
+		<property
+			name="Reserved"
+			column="reserved"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

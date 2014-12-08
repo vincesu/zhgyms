@@ -1,0 +1,281 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript"
+	src="js/module/trading/contract/addContractMgr.js"></script>
+<div>
+<!-- style="width: 980px;"  -->
+	<form id="addContractForm">
+		<input name="id" type="hidden">
+		<input type="hidden" name="tel" id="contract-phone-input">
+		<input type="hidden" name="fax" id="contract-fax-input" >
+		<input type="hidden" name="email" id="contract-email-input" >
+		<!-- 		<fieldset> -->
+		<!-- 			<legend>合同信息</legend> -->
+		<div>
+			<div>
+				<p class="label"></p>
+				<input id="add-contract-id-input" type="hidden" name="id">
+				<div style="clear: both"></div>
+			</div>
+			<div>
+				<p class="label"></p>
+				<input type="hidden" name="reserved">
+				<div style="clear: both"></div>
+			</div>
+			<div>
+				<p class="label"></p>
+				<input type="hidden" id="contract-buyerid" name="buyerId">
+				<div style="clear: both"></div>
+			</div>
+			<div>
+				<p class="label"></p>
+				<input type="hidden" id="create-contract-flag" value="none"
+					name="ccf">
+				<div style="clear: both"></div>
+				<input type="hidden" id="contract-address" name="address">
+			</div>
+			<fieldset style="width:1010px;">
+				<legend>合同信息</legend>
+				<table cellspacing="0" cellpadding="0" style="width:100%;">
+					<!-- 第一行 -->
+					<tr>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<p>合同时间</p>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<p>发货时间</p>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+							合同单号
+							<div style="width:50px;">
+								<div style="float:left;">
+									<a href="###" id="changeDaYang-button">
+										<span class='ui-icon ui-icon-calculator' style='float: center'></span>
+									</a>
+								</div>
+								<div style="float:right;">(打样)</div>
+								<div style="clear:both"></div>
+							</div>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<p id="contract-label-client">客户</p>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<p>品名</p>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<p>付款方式</p>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<p>发货方式</p>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<p>出口方式</p>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<p>货币符</p>
+						</td>
+						<td align="center"
+							style="border-right: 1px solid rgb(141, 178, 227); border-left: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<p>语言</p>
+						</td>
+					</tr>
+					<!-- 第二行 -->
+					<tr>
+						<!-- 合同日期 -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;"><input
+							type="text" style="border: none; width: 100px;" class="Wdate"
+							onfocus="WdatePicker({isShowWeek:true})" name="orderDate">
+						</td>
+						<!-- 发货日期 -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;"><input
+							type="text" style="border: none; width: 100px;" class="Wdate"
+							onfocus="WdatePicker({isShowWeek:true})" name="deliveryDate"></td>
+						<!-- 						合同编号 -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;"><input
+							id="contract_number_input"
+							style="border: none; float: left; width: 100px;" type="text"
+							name="number"></td>
+						<!-- 						客户 -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<input type="text" id="contract-buyerName"
+							style="border: none; width: 130px; height: 17px;"
+							name="clientname">
+						</td>
+						<!-- 						品名-->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;"><input
+							type="text" style="border: none; width: 130px;" name="name"></td>
+						<!-- 						付款方式 -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;"><input
+							type="text" style="border: none; width: 130px;" required="true" alertmsg="请填写付款方式" name="leadTime"></td>
+						<!-- 						发货方式 -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;"><input
+							type="text" style="border: none; width: 100px;"
+							id="contractShippingTrem" name="shippingTrem"></td>
+						<!-- 						出口方式 -->
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;"><input
+							type="text" style="border: none; width: 70px;"
+							id="contractPayment" name="payment" class="combox"
+							code="contractpayment_en" isnone="true"></td>
+						<!-- 						货币 -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;"><select
+							name="currencySymbol" style="border: none; width: 70px;"
+							id="contractCurrencySymbol">
+								<option selected="selected" value="$">美元</option>
+								<option value="￥">人民币</option>
+						</select></td>
+						<!-- 						语言 -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;"><select
+							name="language" style="border: none; width: 70px;"
+							id="contractLanguage">
+								<option selected="selected" value="0">英文</option>
+								<option value="1">中文</option>
+						</select></td>
+					</tr>
+					<!-- 第三行 -->
+					<tr>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<div>提成点</div>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<div>合同完整度</div>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<div></div>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<div></div>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<div></div>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<div></div>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<div></div>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<div></div>
+						</td>
+						<td align="center"
+							style="border-left: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<div></div>
+						</td>
+						<td align="center"
+							style="border-right: 1px solid rgb(141, 178, 227); border-left: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<div></div>
+						</td>
+					</tr>
+					<!-- 第四行 -->
+					<tr>
+						<!-- 提成点 -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<input maxlength="5"
+							type="text" style="border: none; width: 98%;"
+							id="makepoint" name="makepoint">
+						</td>
+						<!-- 合同完整度 -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+							<input maxlength="4" readonly="readonly"
+							type="text" style="border: none; width: 98%;"
+							id="complete" name="complete">
+						</td>
+						<!--  -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+						</td>
+						<!--  -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+						</td>
+						<!--  -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+						</td>
+						<!--  -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+						</td>
+						<!--  -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+						</td>
+						<!--  -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+						</td>
+						<!--  -->
+						<td
+							style="border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+						</td>
+						<!--  -->
+						<td
+							style="border-right: 1px solid rgb(141, 178, 227); border-left: 1px solid rgb(141, 178, 227); border-bottom: 1px solid rgb(141, 178, 227); border-top: 1px solid rgb(141, 178, 227); margin: 0px;">
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+		<div id="cus-contract" style="margin-left: 20px;"></div>
+		<!-- 		</fieldset> -->
+	</form>
+</div>
+<div class="toolbar" style="width: 1025px;">
+	<a class="button3" onclick="javascript:contract_addP();" href="###"><span
+		class='button-text'><span class='ui-icon ui-icon-calculator'
+			style='float: left'></span>添加</span></a> <a class="button3"
+		onclick="javascript:addExtraFee();" href="###"><span
+		class='button-text'><span class='ui-icon ui-icon-calculator'
+			style='float: left'></span>添加额外费用</span></a> <a class="button3"
+		onclick="javascript:contract_deleteP();" href="###"><span
+		class='button-text'><span class='ui-icon ui-icon-calculator'
+			style='float: left'></span>删除</span></a> <a class="button3"
+		onclick="javascript:_addContractRelatedFiles();" href="###"><span
+		class='button-text'><span class='ui-icon ui-icon-calculator'
+			style='float: left'></span>导入合同</span></a> <a class="button3"
+		onclick="javascript:contract_finishP();" href="###"><span
+		class='button-text'><span class='ui-icon ui-icon-calculator'
+			style='float: left'></span>完成</span></a> <a class="button3"
+		onclick="javascript:contract_detail_querygrid_up();" href="###"><span
+		class='button-text'><span class='ui-icon ui-icon-calculator'
+			style='float: left'></span>上移</span></a> <a class="button3"
+		onclick="javascript:contract_detail_querygrid_down();" href="###"><span
+		class='button-text'><span class='ui-icon ui-icon-calculator'
+			style='float: left'></span>下移</span></a>
+</div>
+<table id="addContractGrid"></table>
+<div id="addContractPager"></div>
+<div style="background-color: white;">
+	<p class="label">备注：</p>
+	<textarea id="contract_remark_input" rows="10" style="width: 87.5%;"
+		name="remark"></textarea>
+</div>

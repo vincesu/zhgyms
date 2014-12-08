@@ -1,0 +1,16 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<form id="upload-form" action="service/fileUpload" method="post" enctype="multipart/form-data" >
+	<input type="file" id="upload" name="upload" />
+	<button type="submit">上传</button>
+	<div id="message"></div>
+</form>
+<form id="ProductionTestReportDialogForm">
+	<fieldset>
+		<legend>基本信息</legend>
+		<div><p class="label_long"></p><input type="hidden" name="type" value="12"><div style="clear:both"></div></div>
+		<div><p class="label_long"></p><input type="hidden" id="id" name="id"><div style="clear:both"></div></div>
+		<div><p class="label_long">文件名：</p><input type="text" id="producttestname" name="name"><div style="clear:both"></div></div>
+		<div><p class="label_long">操作员：</p><input type="text" name="operator"><div style="clear:both"></div></div>
+		<div><p class="label_long">时间：</p><input type="text" class="Wdate" onfocus="WdatePicker({isShowWeek:true})" readonly="readonly" name="date"><div style="clear:both"></div></div>
+	</fieldset>
+</form>

@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.vincesu.business.entity">
+	<class
+		name="Trackprogress"
+		table="trackprogress"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="Id"
+			type="java.lang.Long"
+			column="id"
+		>
+			<generator class="increment"/>
+		</id>
+
+		<property
+			name="Clientid"
+			column="clientid"
+			type="java.lang.Long"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Tracktime"
+			column="tracktime"
+			type="date"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="Product"
+			column="product"
+			type="string"
+			not-null="false"
+			length="50"
+		/>
+		<property
+			name="Progress"
+			column="progress"
+			type="string"
+			not-null="false"
+			length="50"
+		/>
+		<property
+			name="Havequote"
+			column="havequote"
+			type="string"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="Fileid1"
+			column="fileid1"
+			type="java.lang.Long"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Filename1"
+			column="filename1"
+			type="string"
+			not-null="false"
+			length="200"
+		/>
+		<property
+			name="Fileid2"
+			column="fileid2"
+			type="java.lang.Long"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Filename2"
+			column="filename2"
+			type="string"
+			not-null="false"
+			length="200"
+		/>
+		<property
+			name="Fileid3"
+			column="fileid3"
+			type="java.lang.Long"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Filename3"
+			column="filename3"
+			type="string"
+			not-null="false"
+			length="200"
+		/>
+		<property
+			name="Fileid4"
+			column="fileid4"
+			type="java.lang.Long"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Filename4"
+			column="filename4"
+			type="string"
+			not-null="false"
+			length="200"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

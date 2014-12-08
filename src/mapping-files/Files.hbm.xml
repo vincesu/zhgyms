@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.vincesu.business.entity">
+	<class
+		name="Files"
+		table="files"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="Id"
+			type="java.lang.Long"
+			column="id"
+		>
+			<generator class="increment"/>
+		</id>
+
+		<property
+			name="Name"
+			column="name"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Description"
+			column="description"
+			type="string"
+			not-null="false"
+			length="300"
+		/>
+		<property
+			name="Path"
+			column="path"
+			type="string"
+			not-null="false"
+			length="500"
+		/>
+		<property
+			name="Pdfpath"
+			column="pdfpath"
+			type="string"
+			not-null="false"
+			length="500"
+		/>
+		<property
+			name="Type"
+			column="type"
+			type="integer"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="RelatedDescription"
+			column="related_description"
+			type="string"
+			not-null="false"
+			length="300"
+		/>
+		<property
+			name="RelatedObject"
+			column="related_object"
+			type="java.lang.Long"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Date"
+			column="date"
+			type="date"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="Operator"
+			column="operator"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="IsPrimary"
+			column="is_primary"
+			type="integer"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="Reserved"
+			column="reserved"
+			type="string"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="Webpath"
+			column="webpath"
+			type="string"
+			not-null="false"
+			length="500"
+		/>
+		<property
+			name="Pngpath"
+			column="pngpath"
+			type="string"
+			not-null="false"
+			length="500"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

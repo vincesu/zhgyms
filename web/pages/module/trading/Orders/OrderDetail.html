@@ -1,0 +1,39 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<div style="width:950px;">
+		<form id="OrdersDialogForm">
+			<fieldset>
+				<legend>基本信息</legend>
+					<div><p class="label_long"></p><input type="hidden" name="id"><div style="clear:both"></div></div>
+					<div><p class="label_long"></p><input type="hidden" name="reserved"><div style="clear:both"></div></div>
+					<table width="100%">
+						<tr>
+							<td><p class="label_long">采购商：</p>
+								<input name="buyer">
+								<div style="clear:both"></div>
+							</td>
+							<td><p class="label_long">联系人：</p><input type="text" name="contact"><div style="clear:both"></div></td>
+							<td><p class="label_long">联系方式：</p><input type="text" name="phone"><div style="clear:both"></div></td>
+						</tr>
+						<tr>
+							<td><p class="label_long">合同单号：</p><input type="text" name="contractNumber"><div style="clear:both"></div></td>
+							<td><p class="label_long">产品名称：</p><input type="text" name="name"><div style="clear:both"></div></td>
+							<td colspan="2"><p class="label_long">金额：</p><input type="text" name="sum"><div style="clear:both"></div></td>
+						</tr>
+						<tr>
+							<td><p class="label_long">业务员：</p><input type="text" readonly="readonly" name="salesman"><div style="clear:both"></div></td>
+							<td><p class="label_long">发货日期：</p><input type="text" class="Wdate" onfocus="WdatePicker({isShowWeek:true})"  name="deliveryDate"><div style="clear:both"></div></td>
+							<td><p class="label_long">下单日期：</p><input type="text" class="Wdate" onfocus="WdatePicker({isShowWeek:true})"  name="orderDate"><div style="clear:both"></div></td>
+						</tr>
+						<tr>
+							<td colspan="3"><p class="label_long">地址：</p><textarea cols="90" rows="1" readonly="readonly" name="address" /><div style="clear:both"></td>
+						</tr>
+					</table>
+				
+			</fieldset>
+		</form>
+</div>
+<div style="margin-left:20px;">
+	<div style="margin-top:10px;">订单相关文件:</div>
+	<div id="orderFiles">
+	</div>
+</div>

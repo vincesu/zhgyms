@@ -1,0 +1,39 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<form id="upload-form" action="service/fileUpload" method="post" enctype="multipart/form-data" >
+	<input type="file" id="upload" name="upload" />
+	<button type="submit">上传</button>
+	<div id="message"></div>
+</form>
+<form id="ProductDialogForm">
+	<fieldset>
+		<legend>基本信息</legend>
+		<table>
+			<tr>
+				<td>
+					<div style="margin:5px 0px;"><a href="###" onclick="javascript:chooseExistProduct();">从已有产品选择</a><div style="clear:both"></div></div>
+					<div style="margin:5px 0px;"><p class="label_long"></p><input type="hidden" name="id"><div style="clear:both"></div></div>
+					<div style="margin:5px 0px;"><p class="label_long">名称：</p><input type="text" name="name"><div style="clear:both"></div></div>
+					<div style="margin:5px 0px;"><p class="label_long">编号：</p><input id="productdialognumber" type="text" name="number"><div style="clear:both"></div></div>
+					<div style="margin:5px 0px;"><p class="label_long">尺寸：</p><input type="text" name="size"><div style="clear:both"></div></div>
+					<div style="margin:5px 0px;"><p class="label_long">参考价格：</p><input type="text" name="referencePrice"><div style="clear:both"></div></div>
+					<div style="margin:5px 0px;"><p class="label_long">起订量：</p><input type="text" name="moq"><div style="clear:both"></div></div>
+					<div style="margin:5px 0px;">
+						<p class="label_long">描述：</p>
+						<select name="description">
+							<option value="公司产品">公司产品</option>
+							<option value="客户产品">客户产品</option>
+						</select>
+						<div style="clear:both"></div>
+					</div>
+					<div style="margin:5px 0px;"><p class="label_long">分类：</p><input type="text" id="productdialogcategory" name="category2" class="combox" code="productcategory"><div style="clear:both"></div></div>
+					<div style="margin:5px 0px;"><p class="label_long">其他分类：</p><input type="text" id="productdialogcategory2" name="category"><div style="clear:both"></div></div>
+					<div style="margin:5px 0px;"><p class="label_long"></p><input type="hidden" id="fileid" name="fileid"><div style="clear:both"></div></div>
+				</td>
+				<td>
+					<img name="path" id="imgpath" src="images/no-products.gif" width="150px" />
+				</td>
+			</tr>
+			
+		</table>
+	</fieldset>
+</form>

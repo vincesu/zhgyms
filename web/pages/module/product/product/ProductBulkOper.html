@@ -1,0 +1,39 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="js/module/product/product/ProductBulkOper.js"></script>
+<div>
+	<fieldset>
+		<legend>基本信息</legend>
+		<form id="productBaseInfo">
+		<table>
+			<tr>
+			<td><p class="label">名称：</p><input type="text" name="name"></td>
+			<td><p class="label">尺寸：</p><input type="text" name="size"><div style="clear:both"></div>
+			<td><p class="label">参考价格：</p><input type="text" name="referencePrice"></td>
+			<td><p class="label">起订量：</p><input type="text" name="moq"></td>
+			</tr>
+			<tr>
+			<td><p class="label">描述：</p><input type="text" name="description"></td>
+			<td><p class="label">分类：</p><input type="text" id="productdialogcategory" name="category2" class="combox" code="productcategory"></td>
+			<td><p class="label">其他分类：</p><input type="text" id="productdialogcategory2" name="category"></td>
+			<td><p class="label">是否覆盖：</p>
+				<select name="override">
+					<option value="0" selected="selected">不覆盖</option>
+					<option value="1">覆盖</option>
+				</select>
+			</td>
+			</tr>
+			<tr>
+				<td colspan="4"><a class="button3" style="float:right;" id="bulkposubmitbutton" href="###"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>上传产品</span></a></td>
+			</tr>
+		</table>
+<!-- 		<input type="hidden" id="fileid" name="fileid"> -->
+		</form>
+	</fieldset>
+</div>
+<form id="multipleFile" enctype="multipart/form-data" target="uploadfame">
+<div id="multiple"></div>
+<div>选择产品图片</div>
+<div class="cleaner"></div>
+<input type="hidden" id="pbofilenames" >
+</form>
+

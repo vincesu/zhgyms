@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.vincesu.business.entity">
+	<class
+		name="ManufactureOrder"
+		table="manufacture_order"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="Id"
+			type="java.lang.Long"
+			column="id"
+		>
+			<generator class="increment"/>
+		</id>
+
+		<property
+			name="Name"
+			column="name"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Number"
+			column="number"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Date"
+			column="date"
+			type="date"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="DeliveryTime"
+			column="delivery_time"
+			type="date"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="Salesman"
+			column="salesman"
+			type="java.lang.Long"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Destination"
+			column="destination"
+			type="string"
+			not-null="false"
+			length="300"
+		/>
+		<property
+			name="IsAudit"
+			column="is_audit"
+			type="boolean"
+			not-null="false"
+		/>
+		<property
+			name="Audit"
+			column="audit"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="ContractId"
+			column="contract_id"
+			type="java.lang.Long"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Remark"
+			column="remark"
+			type="string"
+			not-null="false"
+		/>
+		<property
+			name="Createc"
+			column="createc"
+			type="integer"
+			not-null="false"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

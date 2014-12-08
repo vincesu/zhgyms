@@ -1,0 +1,30 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="js/module/system/settings.js"></script>
+<div style="width:400px;">
+<form id="user_form">
+	<fieldset>
+		<legend>基本信息</legend>
+			<div><input type="hidden" name="id" id="userid"></div>
+			<div><input type="hidden" name="realname"></div>
+			<div><p class="label_longer">用户名：</p><input type="text" name="username" id="username"></div>
+			<div><input type="hidden" name="roleId" id="roleName"></div>
+			<div><p class="label_longer">email：</p><input type="text" name="email" ></div>
+			<div><p class="label_longer">联系方式：</p><input type="text" name="phone" ></div>
+			<div><p class="label_longer">传真：</p><input type="text" name="fax"></div>
+			<div><p class="label_longer">创建用户时间：</p><input type="text" name="joinedTime" readonly="readonly" id="joinedTime"></div>
+			<div><p class="label_longer">最后登录时间：</p><input type="text" name="lastLoginTime" readonly="readonly" id="lastLoginTime"></div>
+	</fieldset>
+	<fieldset>
+		<legend>其他信息</legend>
+		<div><p class="label_longest">合同管理模块支付方式（英）</p><input type="text" name="paymentEn"></div>
+		<div><p class="label_longest">合同管理模块支付方式（中）</p><input type="text" name="paymentCn"></div>
+		<div><p class="label_longest">合同管理默认发货方式：</p><input type="text" name="shippingtrem"></div>
+		<div><p class="label_longest">合同管理备英文注默认值：</p><textarea cols="15" name="contractNote"></textarea></div>
+		<div><p class="label_longest">合同管理备中文注默认值：</p><textarea cols="15" name="contractNoteCn"></textarea></div>
+	</fieldset>
+	<div><input type="hidden" name="reserved" readonly="readonly"></div>
+</form>
+<div style="margin-left:150px;">
+<a class='button3' id="modifybutton" href='###'><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>确定</span></a>
+</div>
+</div>

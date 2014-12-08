@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.vincesu.business.entity">
+	<class
+		name="ProcessingInformation"
+		table="processing_information"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="Id"
+			type="java.lang.Long"
+			column="id"
+		>
+			<generator class="increment"/>
+		</id>
+
+		<property
+			name="Project"
+			column="project"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Price"
+			column="price"
+			type="string"
+			not-null="false"
+			length="50"
+		/>
+		<property
+			name="Contact"
+			column="contact"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Unit"
+			column="unit"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="CantactWay"
+			column="cantact_way"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Remark"
+			column="Remark"
+			type="string"
+			not-null="false"
+			length="300"
+		/>
+		<property
+			name="Number"
+			column="number"
+			type="string"
+			not-null="false"
+			length="200"
+		/>
+		<property
+			name="Qty"
+			column="qty"
+			type="string"
+			not-null="false"
+			length="500"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="js/module/trading/contract/ContractMgr.js"></script>
+<form id="ContractForm"></form>
+<div class="toolbar">
+<a class="button3"  onclick="javascript:addContract();" href="###"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>添加</span></a>
+<a class="button3"  onclick="javascript:viewContract();" href="###"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>修改</span></a>
+<a class="button3"  onclick="javascript:contract_remove();" href="###"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>删除</span></a>
+<a class="button3"  onclick="javascript:previewContract();" href="#"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>预览打印</span></a>
+<a class="button3"  onclick="javascript:viewContractRelatedFiles();" href="#"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>合同相关文件</span></a>
+<!-- <a class="button3"  onclick="javascript:addContractRelatedFiles();" href="#"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>添加相关文件</span></a> -->
+<a class="button3"  onclick="javascript:ContractPreAudit();" href="#"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>提交</span></a>
+<a class="button3" id="contract_audit_button" onclick="javascript:contractAuditOrNot();" href="#"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>审核</span></a>
+<a class="button3" id="contract_finish_button" onclick="javascript:finishContract();" href="#"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>完成</span></a>
+<!-- <a class="button3" id="contract_finish_button" onclick="javascript:calAllContract();" href="#"><span class='button-text'><span class='ui-icon ui-icon-calculator' style='float: left'></span>hiddenButton1</span></a> -->
+</div>
+<table id="ContractGrid"></table>
+<div id="ContractPager"></div>
+<form id="exportContractForm"></form>

@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<services>
+
+	<!--   ******************系统模块********************  -->
+	
+	<!-- 系统用户 -->
+	<!-- 是否已登陆服务 -->
+	<service>
+		<serviceid>islogin</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>islogin</method>
+	</service>
+	
+	<!-- 刷新用户信息 -->
+	<service>
+		<serviceid>freshUserData</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>freshUserData</method>
+	</service>
+	
+	<!-- 登陆服务 -->
+	<service>
+		<serviceid>login</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>login</method>
+	</service>
+	
+	<!-- 注销服务 -->
+	<service>
+		<serviceid>signout</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>signout</method>
+	</service>
+	
+	<!-- 获得用户列表 -->
+	<service>
+		<serviceid>getUsers</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>getUsers</method>
+	</service>
+	
+	<!-- 获得除了root以外的用户 -->
+	<service>
+		<serviceid>getUsersExceptRoot</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>getUsersExceptRoot</method>
+	</service>
+	
+	<!-- 获得编码表 -->
+	<service>
+		<serviceid>getEncoding</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>getEncoding</method>
+	</service>
+
+	<!-- 获得单个用户 -->
+	<service>
+		<serviceid>getUser</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>getUser</method>
+	</service>
+	<!-- 获得当前登录用户 -->
+	<service>
+		<serviceid>getCurrentUser</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>getCurrentUser</method>
+	</service>
+	
+	<!-- 添加或保存用户 -->
+	<service>
+		<serviceid>restoreUser</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>restoreUser</method>
+	</service>
+	<!-- 验证是否为root用户 -->
+	<service>
+		<serviceid>verifyRoot</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>verifyRoot</method>
+	</service>
+	
+	<!-- 修改用户密码 -->
+	<service>
+		<serviceid>modifyPwd</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>modifyPwd</method>
+	</service>
+	
+	<!-- 删除列表 -->
+	<service>
+		<serviceid>removeUser</serviceid>
+		<class>com.vincesu.framework.service.UserService</class>
+		<method>removeUser</method>
+	</service>
+	
+	<!-- 获得module list -->
+	<service>
+		<serviceid>getModuleList</serviceid>
+		<class>com.vincesu.framework.service.ModuleService</class>
+		<method>getModuleList</method>
+	</service>
+	
+	<!-- 获得module -->
+	<service>
+		<serviceid>getModule</serviceid>
+		<class>com.vincesu.framework.service.ModuleService</class>
+		<method>getModule</method>
+	</service>
+	
+	<!-- 修改或保存module -->
+	<service>
+		<serviceid>restoreModule</serviceid>
+		<class>com.vincesu.framework.service.ModuleService</class>
+		<method>restoreModule</method>
+	</service>
+	
+	<!-- 删除module -->
+	<service>
+		<serviceid>removeModule</serviceid>
+		<class>com.vincesu.framework.service.ModuleService</class>
+		<method>removeModule</method>
+	</service>
+	
+	<!-- 系统角色 -->
+	<!-- 获得role list -->
+	<service>
+		<serviceid>getRoleList</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>getRoleList</method>
+	</service>
+	<!-- 获得除了root以外的role list -->
+	<service>
+		<serviceid>getRoleListExceptRoot</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>getRoleListExceptRoot</method>
+	</service>
+	<!-- 获得role -->
+	<service>
+		<serviceid>getRole</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>getRole</method>
+	</service>
+	<!-- 修改或保存role -->
+	<service>
+		<serviceid>restoreRole</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>restoreRole</method>
+	</service>
+	<!-- 删除role -->
+	<service>
+		<serviceid>removeRole</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>removeRole</method>
+	</service>
+	
+	<!-- 查看权限 -->
+	<service>
+		<serviceid>getPermissions</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>getPermissions</method>
+	</service>
+	
+	<!-- 查看未获取权限 -->
+	<service>
+		<serviceid>getPermissionsNotOwn</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>getPermissionsNotOwn</method>
+	</service>
+	
+	<!-- 删除权限 -->
+	<service>
+		<serviceid>removePermissions</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>removePermissions</method>
+	</service>
+	
+	<!-- 删除权限 -->
+	<service>
+		<serviceid>addPermissions</serviceid>
+		<class>com.vincesu.framework.service.RoleService</class>
+		<method>addPermissions</method>
+	</service>
+	
+	<!-- 获得系统参数grid列表 -->
+	<service>
+		<serviceid>getParamList</serviceid>
+		<class>com.vincesu.framework.service.SysParamService</class>
+		<method>getParamList</method>
+	</service>
+	<!-- 获得系统参数 -->
+	<service>
+		<serviceid>getParameters</serviceid>
+		<class>com.vincesu.framework.service.SysParamService</class>
+		<method>getParameters</method>
+	</service>
+	<!-- 修改或保存系统参数 -->
+	<service>
+		<serviceid>restoreParameter</serviceid>
+		<class>com.vincesu.framework.service.SysParamService</class>
+		<method>restoreParameter</method>
+	</service>
+	<!-- 删除系统参数 -->
+	<service>
+		<serviceid>removeParameter</serviceid>
+		<class>com.vincesu.framework.service.SysParamService</class>
+		<method>removeParameter</method>
+	</service>
+	
+	<!--   **********************************************  -->
+	
+	<!-- 添加半成品产品 -->
+	<service>
+		<serviceid>addSemifinishedProduct</serviceid>
+		<class>com.vincesu.business.service.SemifinishedProductService</class>
+		<method>add</method>
+	</service>
+	
+	<!-- 修改半成品产品 -->
+	<service>
+		<serviceid>updateSemifinishedProduct</serviceid>
+		<class>com.vincesu.business.service.SemifinishedProductService</class>
+		<method>update</method>
+	</service>
+	
+	<!-- 删除半成品产品 -->
+	<service>
+		<serviceid>removeSemifinishedProduct</serviceid>
+		<class>com.vincesu.business.service.SemifinishedProductService</class>
+		<method>remove</method>
+	</service>
+	
+	<!-- 获得半成品产品列表 -->
+	<service>
+		<serviceid>getSemifinishedProductList</serviceid>
+		<class>com.vincesu.business.service.SemifinishedProductService</class>
+		<method>queryList</method>
+	</service>
+	
+	<!-- 获得半成品产品 -->
+	<service>
+		<serviceid>getSemifinishedProduct</serviceid>
+		<class>com.vincesu.business.service.SemifinishedProductService</class>
+		<method>queryObject</method>
+	</service>
+	
+	<!-- 保存文件 -->
+	<service>
+		<serviceid>uploadFile</serviceid>
+		<class>com.vincesu.business.service.CommonService</class>
+		<method>uploadFile</method>
+	</service>
+	
+	<!-- 预览文件 -->
+	<service>
+		<serviceid>previewFiles</serviceid>
+		<class>com.vincesu.business.service.CommonService</class>
+		<method>previewFile</method>
+	</service>
+	
+	<!-- 添加产品 -->
+	<service>
+		<serviceid>addProduct</serviceid>
+		<class>com.vincesu.business.service.ProductService</class>
+		<method>add</method>
+	</service>
+	<!-- 批量产品图片下载 -->
+	<service>
+		<serviceid>productPicBulkDownload</serviceid>
+		<class>com.vincesu.business.service.ProductService</class>
+		<method>productPicBulkDownload</method>
+	</service>
+	<!-- 修改产品 -->
+	<service>
+		<serviceid>updateProduct</serviceid>
+		<class>com.vincesu.business.service.ProductService</class>
+		<method>update</method>
+	</service>
+	<!-- 删除产品 -->
+	<service>
+		<serviceid>removeProduct</serviceid>
+		<class>com.vincesu.business.service.ProductService</class>
+		<method>remove</method>
+	</service>
+	<!-- 获得产品列表 -->
+	<service>
+		<serviceid>getProductList</serviceid>
+		<class>com.vincesu.business.service.ProductService</class>
+		<method>queryList</method>
+	</service>
+	<!-- 获得产品 -->
+	<service>
+		<serviceid>getProduct</serviceid>
+		<class>com.vincesu.business.service.ProductService</class>
+		<method>queryObject</method>
+	</service>
+	<!-- 产品导出 -->
+	<service>
+		<serviceid>exportProduct</serviceid>
+		<class>com.vincesu.business.service.ProductService</class>
+		<method>exportData</method>
+	</service>
+	<!-- 产品导出 -->
+	<service>
+		<serviceid>importProduct</serviceid>
+		<class>com.vincesu.business.service.ProductService</class>
+		<method>importData</method>
+	</service>
+	<!-- 添加产品销售方案 -->
+	<service>
+		<serviceid>addSalesProgram</serviceid>
+		<class>com.vincesu.business.service.ProductService</class>
+		<method>addSalesProgram</method>
+	</service>
+	<!-- 删除产品销售方案 -->
+	<service>
+		<serviceid>removeSalesProgram</serviceid>
+		<class>com.vincesu.business.service.ProductService</class>
+		<method>removeSalesProgram</method>
+	</service>
+	<!-- 查看产品销售方案 -->
+	<service>
+		<serviceid>viewSalesProgram</serviceid>
+		<class>com.vincesu.business.service.ProductService</class>
+		<method>viewSalesProgram</method>
+	</service>
+	
+	<!-- 添加产品目录 -->
+	<service>
+		<serviceid>addProductDirectory</serviceid>
+		<class>com.vincesu.business.service.ProductDirectoryService</class>
+		<method>add</method>
+	</service>
+	
+	<!-- 修改产品目录 -->
+	<service>
+		<serviceid>updateProductDirectory</serviceid>
+		<class>com.vincesu.business.service.ProductDirectoryService</class>
+		<method>update</method>
+	</service>
+	
+	<!-- 删除产品目录 -->
+	<service>
+		<serviceid>removeProductDirectory</serviceid>
+		<class>com.vincesu.business.service.ProductDirectoryService</class>
+		<method>remove</method>
+	</service>
+	
+	<!-- 获得产品目录列表 -->
+	<service>
+		<serviceid>getProductDirectoryList</serviceid>
+		<class>com.vincesu.business.service.ProductDirectoryService</class>
+		<method>queryList</method>
+	</service>
+	
+	<!-- 获得产品目录 -->
+	<service>
+		<serviceid>getProductDirectory</serviceid>
+		<class>com.vincesu.business.service.ProductDirectoryService</class>
+		<method>queryObject</method>
+	</service>
+	
+	<!-- 下载文件 -->
+	<service>
+		<serviceid>downloadFiles</serviceid>
+		<class>com.vincesu.business.service.CommonService</class>
+		<method>downloadFile</method>
+	</service>
+	
+	<!-- 首页搜索产品目录 -->
+	<service>
+		<serviceid>getProductDirectorys</serviceid>
+		<class>com.vincesu.business.service.CommonService</class>
+		<method>querySearchFiles</method>
+	</service>
+	
+	<!-- 添加生产单 -->
+	<service>
+		<serviceid>addProduce</serviceid>
+		<class>com.vincesu.business.service.ProduceService</class>
+		<method>add</method>
+	</service>
+	<!-- 获得合同产品信息 -->
+	<service>
+		<serviceid>getContractProduct</serviceid>
+		<class>com.vincesu.business.service.ProduceService</class>
+		<method>getContractProduct</method>
+	</service>
+	<!-- 审核生产单 -->
+	<service>
+		<serviceid>auditProduce</serviceid>
+		<class>com.vincesu.business.service.ProduceService</class>
+		<method>audit</method>
+	</service>
+	<!-- 查询productiong -->
+	<service>
+		<serviceid>queryProductionList</serviceid>
+		<class>com.vincesu.business.service.ProduceService</class>
+		<method>queryProductionList</method>
+	</service>
+
+	<!-- 添加生产单 -->
+	<service>
+		<serviceid>addProduction</serviceid>
+		<class>com.vincesu.business.service.ProduceService</class>
+		<method>addProduction</method>
+	</service>
+	<!-- 修改生产单 -->
+	<service>
+		<serviceid>updateProduce</serviceid>
+		<class>com.vincesu.business.service.ProduceService</class>
+		<method>update</method>
+	</service>
+	<!-- 删除生产单 -->
+	<service>
+		<serviceid>removeProduce</serviceid>
+		<class>com.vincesu.business.service.ProduceService</class>
+		<method>remove</method>
+	</service>
+	<!-- 获得生产单列表 -->
+	<service>
+		<serviceid>getProduceList</serviceid>
+		<class>com.vincesu.business.service.ProduceService</class>
+		<method>queryList</method>
+	</service>
+	<!-- 获得生产单 -->
+	<service>
+		<serviceid>getProduce</serviceid>
+		<class>com.vincesu.business.service.ProduceService</class>
+		<method>queryObject</method>
+	</service>
+	
+	<!-- 获得附属文件列表 -->
+	<service>
+		<serviceid>getFiles</serviceid>
+		<class>com.vincesu.business.service.CommonService</class>
+		<method>queryFiles</method>
+	</service>
+	<!-- 获得附属文件 -->
+	<service>
+		<serviceid>getOneFile</serviceid>
+		<class>com.vincesu.business.service.CommonService</class>
+		<method>queryFile</method>
+	</service>
+	<!-- 添加附属文件 -->
+	<service>
+		<serviceid>addFile</serviceid>
+		<class>com.vincesu.business.service.CommonService</class>
+		<method>add</method>
+	</service>
+	<!-- 删除附属文件 -->
+	<service>
+		<serviceid>removeFile</serviceid>
+		<class>com.vincesu.business.service.CommonService</class>
+		<method>remove</method>
+	</service>
+	
+	<!-- 添加加工信息 -->
+	<service>
+		<serviceid>addProcessingInformation</serviceid>
+		<class>com.vincesu.business.service.ProcessingInformationService</class>
+		<method>add</method>
+	</service>
+	<!-- 修改加工信息 -->
+	<service>
+		<serviceid>updateProcessingInformation</serviceid>
+		<class>com.vincesu.business.service.ProcessingInformationService</class>
+		<method>update</method>
+	</service>
+	<!-- 删除加工信息 -->
+	<service>
+		<serviceid>removeProcessingInformation</serviceid>
+		<class>com.vincesu.business.service.ProcessingInformationService</class>
+		<method>remove</method>
+	</service>
+	<!-- 获得加工信息列表 -->
+	<service>
+		<serviceid>getProcessingInformationList</serviceid>
+		<class>com.vincesu.business.service.ProcessingInformationService</class>
+		<method>queryList</method>
+	</service>
+	<!-- 获得加工信息 -->
+	<service>
+		<serviceid>getProcessingInformation</serviceid>
+		<class>com.vincesu.business.service.ProcessingInformationService</class>
+		<method>queryObject</method>
+	</service>
+	
+	<!-- 修改材料信息 -->
+	<service>
+		<serviceid>addMaterials</serviceid>
+		<class>com.vincesu.business.service.MaterialsService</class>
+		<method>add</method>
+	</service>
+	<!-- 修改材料信息 -->
+	<service>
+		<serviceid>updateMaterials</serviceid>
+		<class>com.vincesu.business.service.MaterialsService</class>
+		<method>update</method>
+	</service>
+	<!-- 删除材料信息 -->
+	<service>
+		<serviceid>removeMaterials</serviceid>
+		<class>com.vincesu.business.service.MaterialsService</class>
+		<method>remove</method>
+	</service>
+	<!-- 获得材料信息列表 -->
+	<service>
+		<serviceid>getMaterialsList</serviceid>
+		<class>com.vincesu.business.service.MaterialsService</class>
+		<method>queryList</method>
+	</service>
+	<!-- 获得材料信息 -->
+	<service>
+		<serviceid>getMaterials</serviceid>
+		<class>com.vincesu.business.service.MaterialsService</class>
+		<method>queryObject</method>
+	</service>
+	<!-- 材料信息导出 -->
+	<service>
+		<serviceid>exportMaterials</serviceid>
+		<class>com.vincesu.business.service.MaterialsService</class>
+		<method>exportData</method>
+	</service>
+	<!-- 材料信息导入 -->
+	<service>
+		<serviceid>importMaterials</serviceid>
+		<class>com.vincesu.business.service.MaterialsService</class>
+		<method>importData</method>
+	</service>
+	
+	<!-- 添加供应商 -->
+	<service>
+		<serviceid>addSuppliers</serviceid>
+		<class>com.vincesu.business.service.SuppliersService</class>
+		<method>add</method>
+	</service>
+	<!-- 修改供应商 -->
+	<service>
+		<serviceid>updateSuppliers</serviceid>
+		<class>com.vincesu.business.service.SuppliersService</class>
+		<method>update</method>
+	</service>
+	<!-- 删除供应商 -->
+	<service>
+		<serviceid>removeSuppliers</serviceid>
+		<class>com.vincesu.business.service.SuppliersService</class>
+		<method>remove</method>
+	</service>
+	<!-- 获得供应商列表 -->
+	<service>
+		<serviceid>getSuppliersList</serviceid>
+		<class>com.vincesu.business.service.SuppliersService</class>
+		<method>queryList</method>
+	</service>
+	<!-- 获得供应商 -->
+	<service>
+		<serviceid>getSuppliers</serviceid>
+		<class>com.vincesu.business.service.SuppliersService</class>
+		<method>queryObject</method>
+	</service>
+	<!-- 导出供应商信息 -->
+	<service>
+		<serviceid>exportSuppliers</serviceid>
+		<class>com.vincesu.business.service.SuppliersService</class>
+		<method>exportData</method>
+	</service>
+	<!-- 导入供应商信息 -->
+	<service>
+		<serviceid>importSuppliers</serviceid>
+		<class>com.vincesu.business.service.SuppliersService</class>
+		<method>importData</method>
+	</service>
+	
+	<!-- 添加订单 -->
+	<service>
+		<serviceid>addOrder</serviceid>
+		<class>com.vincesu.business.service.OrdersService</class>
+		<method>add</method>
+	</service>
+	<!-- 修改订单 -->
+	<service>
+		<serviceid>updateOrder</serviceid>
+		<class>com.vincesu.business.service.OrdersService</class>
+		<method>update</method>
+	</service>
+	<!-- 删除订单 -->
+	<service>
+		<serviceid>removeOrder</serviceid>
+		<class>com.vincesu.business.service.OrdersService</class>
+		<method>remove</method>
+	</service>
+	<!-- 获得订单列表 -->
+	<service>
+		<serviceid>getOrdersList</serviceid>
+		<class>com.vincesu.business.service.OrdersService</class>
+		<method>queryList</method>
+	</service>
+	<!-- 获得订单 -->
+	<service>
+		<serviceid>getOrder</serviceid>
+		<class>com.vincesu.business.service.OrdersService</class>
+		<method>queryObject</method>
+	</service>
+	<!-- 获得订单相关文件 -->
+	<service>
+		<serviceid>getOrderFilesList</serviceid>
+		<class>com.vincesu.business.service.OrdersService</class>
+		<method>queryRelatedFilesList</method>
+	</service>
+	<!-- 添加订单相关文件 -->
+	<service>
+		<serviceid>addOrderFile</serviceid>
+		<class>com.vincesu.business.service.OrdersService</class>
+		<method>addRelatedFile</method>
+	</service>
+	<!-- 删除订单相关文件 -->
+	<service>
+		<serviceid>removeOrderFile</serviceid>
+		<class>com.vincesu.business.service.OrdersService</class>
+		<method>removeRelatedObject</method>
+	</service>
+	<!-- 获得订单相关文件 -->
+	<service>
+		<serviceid>getOrderFile</serviceid>
+		<class>com.vincesu.business.service.OrdersService</class>
+		<method>queryRelatedFiles</method>
+	</service>
+	<!-- 通过订单id获得订单相关文件 -->
+	<service>
+		<serviceid>queryRelatedFilesWithOrderId</serviceid>
+		<class>com.vincesu.business.service.OrdersService</class>
+		<method>queryRelatedFilesWithOrderId</method>
+	</service>
+	
+	<!-- 添加客户 -->
+	<service>
+		<serviceid>addClient</serviceid>
+		<class>com.vincesu.business.service.ClientService</class>
+		<method>add</method>
+	</service>
+	
+	<!-- 变更客户类型 -->
+	<service>
+		<serviceid>changeClientType</serviceid>
+		<class>com.vincesu.business.service.ClientService</class>
+		<method>changeClientType</method>
+	</service>
+	
+	<!-- 修改客户 -->
+	<service>
+		<serviceid>updateClient</serviceid>
+		<class>com.vincesu.business.service.ClientService</class>
+		<method>update</method>
+	</service>
+	<!-- 删除客户 -->
+	<service>
+		<serviceid>removeClient</serviceid>
+		<class>com.vincesu.business.service.ClientService</class>
+		<method>remove</method>
+	</service>
+	<!-- 获得客户列表 -->
+	<service>
+		<serviceid>getClientList</serviceid>
+		<class>com.vincesu.business.service.ClientService</class>
+		<method>queryList</method>
+	</service>
+	<!-- 获得同一公司客户信息列表 -->
+	<service>
+		<serviceid>getCompanyClientList</serviceid>
+		<class>com.vincesu.business.service.ClientService</class>
+		<method>queryCompanyList</method>
+	</service>
+	<!-- 获得客户 -->
+	<service>
+		<serviceid>getClient</serviceid>
+		<class>com.vincesu.business.service.ClientService</class>
+		<method>queryObject</method>
+	</service>
+	
+	<!-- 添加通讯录 -->
+	<service>
+		<serviceid>addAddressBook</serviceid>
+		<class>com.vincesu.business.service.AddressBookService</class>
+		<method>add</method>
+	</service>
+	<!-- 修改通讯录 -->
+	<service>
+		<serviceid>updateAddressBook</serviceid>
+		<class>com.vincesu.business.service.AddressBookService</class>
+		<method>update</method>
+	</service>
+	<!-- 删除通讯录 -->
+	<service>
+		<serviceid>removeAddressBook</serviceid>
+		<class>com.vincesu.business.service.AddressBookService</class>
+		<method>remove</method>
+	</service>
+	<!-- 获得通讯录列表 -->
+	<service>
+		<serviceid>getAddressBookList</serviceid>
+		<class>com.vincesu.business.service.AddressBookService</class>
+		<method>queryList</method>
+	</service>
+	<!-- 获得通讯录 -->
+	<service>
+		<serviceid>getAddressBook</serviceid>
+		<class>com.vincesu.business.service.AddressBookService</class>
+		<method>queryObject</method>
+	</service>
+	<!-- 导出通讯录 -->
+	<service>
+		<serviceid>exportAddressBook</serviceid>
+		<class>com.vincesu.business.service.AddressBookService</class>
+		<method>exportData</method>
+	</service>
+	<!-- 导入通讯录 -->
+	<service>
+		<serviceid>importAddressBook</serviceid>
+		<class>com.vincesu.business.service.AddressBookService</class>
+		<method>importData</method>
+	</service>
+	
+	<!-- 添加快递信息 -->
+	<service>
+		<serviceid>addExpressDelivery</serviceid>
+		<class>com.vincesu.business.service.ExpressDeliveryService</class>
+		<method>add</method>
+	</service>
+	<!-- 修改快递信息 -->
+	<service>
+		<serviceid>updateExpressDelivery</serviceid>
+		<class>com.vincesu.business.service.ExpressDeliveryService</class>
+		<method>update</method>
+	</service>
+	<!-- 删除快递信息 -->
+	<service>
+		<serviceid>removeExpressDelivery</serviceid>
+		<class>com.vincesu.business.service.ExpressDeliveryService</class>
+		<method>remove</method>
+	</service>
+	<!-- 获得快递信息列表 -->
+	<service>
+		<serviceid>getExpressDeliveryList</serviceid>
+		<class>com.vincesu.business.service.ExpressDeliveryService</class>
+		<method>queryList</method>
+	</service>
+	<!-- 获得快递信息 -->
+	<service>
+		<serviceid>getExpressDelivery</serviceid>
+		<class>com.vincesu.business.service.ExpressDeliveryService</class>
+		<method>queryObject</method>
+	</service>
+	
+	<!-- 添加通知 -->
+	<service>
+		<serviceid>addNotice</serviceid>
+		<class>com.vincesu.business.service.NoticeService</class>
+		<method>add</method>
+	</service>
+	<!-- 修改通知 -->
+	<service>
+		<serviceid>updateNotice</serviceid>
+		<class>com.vincesu.business.service.NoticeService</class>
+		<method>update</method>
+	</service>
+	<!-- 删除通知 -->
+	<service>
+		<serviceid>removeNotice</serviceid>
+		<class>com.vincesu.business.service.NoticeService</class>
+		<method>remove</method>
+	</service>
+	<!-- 获得通知列表 -->
+	<service>
+		<serviceid>getNoticeList</serviceid>
+		<class>com.vincesu.business.service.NoticeService</class>
+		<method>queryList</method>
+	</service>
+	<!-- 获得通知 -->
+	<service>
+		<serviceid>getNotice</serviceid>
+		<class>com.vincesu.business.service.NoticeService</class>
+		<method>queryObject</method>
+	</service>
+	
+	<!-- 新增用户 -->
+	<service>
+		<serviceid>addSystemUser</serviceid>
+		<class>com.vincesu.business.service.SystemService</class>
+		<method>addUser</method>
+	</service>
+	
+	<!-- 备份数据 -->
+	<service>
+		<serviceid>backupSystemData</serviceid>
+		<class>com.vincesu.business.service.SystemService</class>
+		<method>backup</method>
+	</service>
+	
+	<!-- 提交订单 -->
+	<service>
+		<serviceid>lockOrder</serviceid>
+		<class>com.vincesu.business.service.OrdersService</class>
+		<method>lockOrder</method>
+	</service>
+	
+	<!-- 上传多个文件 -->
+	<service>
+		<serviceid>uploadMultipleFiles</serviceid>
+		<class>com.vincesu.business.service.CommonService</class>
+		<method>uploadMultipleFiles</method>
+	</service>
+	
+	<!-- 上传多个产品 -->
+	<service>
+		<serviceid>bulkProductImport</serviceid>
+		<class>com.vincesu.business.service.ProductService</class>
+		<method>bulkProductImport</method>
+	</service>
+	
+	<service>
+		<serviceid>restoreDB</serviceid>
+		<class>com.vincesu.business.service.SystemService</class>
+		<method>restoreDB</method>
+	</service>
+	
+	<!-- 添加编码表 -->
+	<service>
+		<serviceid>addSysEncoding</serviceid>
+		<class>com.vincesu.business.service.SystemService</class>
+		<method>addSysEncoding</method>
+	</service>
+	<!-- 修改编码表 -->
+	<service>
+		<serviceid>updateSysEncoding</serviceid>
+		<class>com.vincesu.business.service.SystemService</class>
+		<method>updateSysEncoding</method>
+	</service>
+	<!-- 删除编码表 -->
+	<service>
+		<serviceid>removeSysEncoding</serviceid>
+		<class>com.vincesu.business.service.SystemService</class>
+		<method>removeSysEncoding</method>
+	</service>
+	<!-- 获得编码表列表 -->
+	<service>
+		<serviceid>querySysEncodingList</serviceid>
+		<class>com.vincesu.business.service.SystemService</class>
+		<method>querySysEncodingList</method>
+	</service>
+	<!-- 获得编码表 -->
+	<service>
+		<serviceid>querySysEncodingObject</serviceid>
+		<class>com.vincesu.business.service.SystemService</class>
+		<method>querySysEncodingObject</method>
+	</service>
+	
+	<!-- 获得合同列表 -->
+	<service>
+		<serviceid>queryContractList</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>queryList</method>
+	</service>
+	
+	<!-- 获得合同列表 -->
+	<service>
+		<serviceid>calAllContract</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>calAllContract</method>
+	</service>
+	
+	<!-- 获得合同 -->
+	<service>
+		<serviceid>queryContractObject</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>queryObject</method>
+	</service>
+	<!-- 保存（修改）合同 -->
+	<service>
+		<serviceid>restoreContract</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>restoreContract</method>
+	</service>
+	<!-- 查询合同详细信息 -->
+	<service>
+		<serviceid>queryContractDetail</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>queryContractDetail</method>
+	</service>
+	<!-- 删除合同 -->
+	<service>
+		<serviceid>removeContract</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>remove</method>
+	</service>
+	<!-- 添加合同相关文件 -->
+	<service>
+		<serviceid>addContractRelatedFile</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>addRelatedFile</method>
+	</service>
+	<!-- 添加合同相关文件 -->
+	<service>
+		<serviceid>queryContractRelatedFiles</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>queryRelatedFiles</method>
+	</service>
+	<!-- 提交合同审核 -->
+	<service>
+		<serviceid>ContractApplicationReview</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>ApplicationReview</method>
+	</service>
+	<!-- 合同审核 -->
+	<service>
+		<serviceid>ContractReview</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>Review</method>
+	</service>
+	<!-- 删除合同相关文件 -->
+	<service>
+		<serviceid>removeContractRelatedObject</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>removeRelatedObject</method>
+	</service>
+	<!-- 删除合同相关文件 -->
+	<service>
+		<serviceid>queryContractTotal</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>queryContractTotal</method>
+	</service>
+	<!-- 获取当前最大合同编号 -->
+	<service>
+		<serviceid>getCurrentContractNumber</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>getCurrentContractNumber</method>
+	</service>
+	<!-- 获取合同默认值 -->
+	<service>
+		<serviceid>queryContractDefault</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>queryContractDefault</method>
+	</service>
+	<!-- 完成合同 -->
+	<service>
+		<serviceid>finishContract</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>finish</method>
+	</service>
+	<!-- 审核不通过 -->
+	<service>
+		<serviceid>UnApplicationReviewContract</serviceid>
+		<class>com.vincesu.business.service.ContractService</class>
+		<method>UnApplicationReview</method>
+	</service>
+	
+	<!-- 财务报表查询 -->
+	<service>
+		<serviceid>FinancialStatementsQueryList</serviceid>
+		<class>com.vincesu.business.service.FinancialStatementsService</class>
+		<method>queryList</method>
+	</service>
+	<!-- 财务报表保存 -->
+	<service>
+		<serviceid>FinancialStatementsSave</serviceid>
+		<class>com.vincesu.business.service.FinancialStatementsService</class>
+		<method>restore</method>
+	</service>
+	<!-- 财务报表保存 -->
+	<service>
+		<serviceid>FinancialStatementsFinish</serviceid>
+		<class>com.vincesu.business.service.FinancialStatementsService</class>
+		<method>finish</method>
+	</service>
+	<!-- 财务报表应收金额合计查询 -->
+	<service>
+		<serviceid>queryFinancialstatementsTotal</serviceid>
+		<class>com.vincesu.business.service.FinancialStatementsService</class>
+		<method>queryFinancialstatementsTotal</method>
+	</service>
+	
+	<!-- 操作日志查询 -->
+	<service>
+		<serviceid>queryOperationLogList</serviceid>
+		<class>com.vincesu.business.service.OperationLogService</class>
+		<method>queryList</method>
+	</service>
+	
+	<!-- 客户合同信息备份-->
+	<service>
+		<serviceid>tradingDataBak</serviceid>
+		<class>com.vincesu.business.service.TradingDataBakService</class>
+		<method>tradingDataBak</method>
+	</service>
+	
+	<service>
+		<serviceid>exportFSData</serviceid>
+		<class>com.vincesu.business.service.FinancialStatementsService</class>
+		<method>exportData</method>
+	</service>
+	
+	<!-- 潜在客户跟踪进度 -->
+	<service>
+		<serviceid>getTrackProgressList</serviceid>
+		<class>com.vincesu.business.service.TrackProgressService</class>
+		<method>queryList</method>
+	</service>
+	
+	<service>
+		<serviceid>getTrackProgress</serviceid>
+		<class>com.vincesu.business.service.TrackProgressService</class>
+		<method>queryObject</method>
+	</service>
+	
+	<service>
+		<serviceid>addTrackProgress</serviceid>
+		<class>com.vincesu.business.service.TrackProgressService</class>
+		<method>add</method>
+	</service>
+	
+	<service>
+		<serviceid>addTrackProgressFile</serviceid>
+		<class>com.vincesu.business.service.TrackProgressService</class>
+		<method>addTrackProgressFile</method>
+	</service>
+	
+	<service>
+		<serviceid>removeTrackProgressFile</serviceid>
+		<class>com.vincesu.business.service.TrackProgressService</class>
+		<method>removeTrackProgressFile</method>
+	</service>
+	
+	<service>
+		<serviceid>removeTrackProgress</serviceid>
+		<class>com.vincesu.business.service.TrackProgressService</class>
+		<method>remove</method>
+	</service>
+	
+	<service>
+		<serviceid>updateTrackProgress</serviceid>
+		<class>com.vincesu.business.service.TrackProgressService</class>
+		<method>update</method>
+	</service>
+	
+</services>

@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<form id="TrackProgressDialogForm">
+	<fieldset>
+		<legend>跟踪信息</legend>
+		<div style="margin:5px 0px;"><input type="text" name="id" hidden="hidden"><div style="clear:both"></div></div>
+		<div style="margin:5px 0px;"><a href="###" onclick="javascript:chooseExistClient();">选择潜在客户</a><div style="clear:both"></div></div>
+		<div style="margin:5px 0px;"><p class="label_long">单位：</p><input type="text" required="true" alertmsg="请选择客户" readonly="readonly" id="TrackProgressDialogcUnit" name="unit"><div style="clear:both"></div></div>
+		<div style="margin:5px 0px;"><p class="label_long">联系人：</p><input type="text" readonly="readonly" id="TrackProgressDialogcContact" name="contact"><div style="clear:both"></div></div>
+		<div style="margin:5px 0px;"><input type="text" id="TrackProgressDialogClientid" hidden="hidden" name="clientid"><div style="clear:both"></div></div>
+		
+		<div style="margin:5px 0px;"><p class="label_long">跟踪时间：</p><input type="text" required="true" alertmsg="请填写跟踪时间" class="Wdate" onfocus="WdatePicker({isShowWeek:true})" name="tracktime"><div style="clear:both"></div></div>
+		<div style="margin:5px 0px;"><p class="label_long">推荐产品：</p><input type="text" name="product"><div style="clear:both"></div></div>
+		<div style="margin:5px 0px;"><p class="label_long">跟踪描述：</p><textarea type="text" rows="6" cols="15" name="progress"></textarea><div style="clear:both"></div></div>
+<!-- 		<div style="margin:5px 0px;"><p class="label_long">报价单：</p><input type="text" class="combox" code="truefalse" name="havequote"><div style="clear:both"></div></div> -->
+		</table>
+	</fieldset>
+</form>

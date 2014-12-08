@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.vincesu.business.entity">
+	<class
+		name="OperationLog"
+		table="operation_log"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="Id"
+			type="java.lang.Long"
+			column="id"
+		>
+			<generator class="increment"/>
+		</id>
+
+		<property
+			name="Operation"
+			column="operation"
+			type="string"
+			not-null="false"
+			length="300"
+		/>
+		<property
+			name="Operationdate"
+			column="operationdate"
+			type="date"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="Operator"
+			column="operator"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Operationid"
+			column="operationid"
+			type="java.lang.Long"
+			not-null="false"
+			length="19"
+		/>
+		<property
+			name="Reserved1"
+			column="reserved1"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Reserved2"
+			column="reserved2"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Reserved3"
+			column="reserved3"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

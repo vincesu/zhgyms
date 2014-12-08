@@ -1,0 +1,15 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<form id="OrdersDialogForm">
+	<fieldset>
+		<legend>基本信息</legend>
+		<div><p class="label"></p><input type="hidden" name="id"><div style="clear:both"></div></div>
+		<div><p class="label">采购商：</p><textarea id="dialogBuyer" class="adaptive" name="buyer"></textarea><a href="javascript:chooseClient();">选择</a><div style="clear:both"></div></div>
+		<div><p class="label">产品名称：</p><input id="orderDialogName" type="text" name="name"><div style="clear:both"></div></div>
+		<div><p class="label">合同单号：</p><input type="text" name="contractNumber"><div style="clear:both"></div></div>
+		<div><p class="label">金额：</p><input type="text" name="sum"><div style="clear:both"></div></div>
+		<div><p class="label">下单日期：</p><input type="text" class="Wdate" onfocus="WdatePicker({isShowWeek:true})"  name="orderDate"><div style="clear:both"></div></div>
+		<div><p class="label">发货日期：</p><input type="text" class="Wdate" onfocus="WdatePicker({isShowWeek:true})"  name="deliveryDate"><div style="clear:both"></div></div>
+		<div><p class="label">业务员(不必填写)：</p><input type="text" readonly="readonly" name="salesman"><div style="clear:both"></div></div>
+		<div><p class="label"></p><input type="hidden" name="reserved"><div style="clear:both"></div></div>
+	</fieldset>
+</form>

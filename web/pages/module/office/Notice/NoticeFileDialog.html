@@ -1,0 +1,14 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<form id="upload-form" action="service/fileUpload" method="post" enctype="multipart/form-data" >
+	<input type="file" id="upload" name="upload" />
+	<button type="submit">上传</button>
+	<div id="message"></div>
+</form>
+<form id="NoticeFileDialogForm">
+	<fieldset>
+		<legend>基本信息</legend>
+		<div><p class="label_long"></p><input type="hidden" name="type" value="25"><div style="clear:both"></div></div>
+		<div><p class="label_long"></p><input type="hidden" id="notice-file-id" name="fileid"><div style="clear:both"></div></div>
+		<div><p class="label_long">标题：</p><input type="text" id="noticefilename" name="title"><div style="clear:both"></div></div>
+	</fieldset>
+</form>

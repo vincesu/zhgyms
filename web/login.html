@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>温州中昊工艺品有限公司</title>
+<script type="text/javascript" src="js/framework/jquery-1.8.0.js" ></script>
+<script type="text/javascript" src="js/framework/include.js" ></script>
+<script type="text/javascript" src="js/module/login.js" ></script>
+<link type="text/css" rel="stylesheet" href="css/login/style.css">
+<link type="text/css" rel="stylesheet" href="css/login/cas.css">
+</head>
+<body>
+	<div id="header_login">
+	  <!--header_begin-->
+	  <div class="logo"></div>
+	  <!--header_end-->
+	</div>
+
+	<div class="top"><span class="top_logo"></span></div>
+	
+	<form id="fm1" class="fm-v clearfix" style="margin:0px;" >
+	
+	<div class="pic_bg">
+	<div class="bigpic"> 
+		<div class="box_input">
+			<table class="input_tab" border="0" cellpadding="0" cellspacing="0">
+			  <tbody><tr>
+			    <td class="input_tab_lefttd">用 户：</td>
+			    <td>
+					<input id="username" name="username" onkeyup="if(event.keyCode==13)document.getElementById('password').focus();" class="input_box_a" tabindex="1" size="25" type="text" />
+			    </td>
+			  </tr>
+			
+			  <tr>
+			    <td class="input_tab_lefttd">密码：</td>
+			    <td>
+			    	<input id="password" name="pwd" class="input_box_a" tabindex="2" onkeyup="if(event.keyCode==13)newLogin();" value="" size="25" type="password" />
+			    </td>
+			  </tr>
+			  <tr>
+			    <td>&nbsp;</td>
+			    <td>
+			    	<div id="alertdiv"><span id="loadpic" style="float:left;"><img src="css/login/images/load_small.gif"></img></span><div id="message">&nbsp;&nbsp;&nbsp;正在登陆...</div></div>
+			          <!-- <label>记住密码</label>
+			          <input type="checkbox" name="CheckboxGroup1" value="记住密码" id="CheckboxGroup1_0" />
+			     -->
+			       
+			<!--     <input name="lt" value="1" type="hidden"> -->
+			<!-- 		<input name="_eventId" value="submit" type="hidden"> -->
+			    </td>
+			  </tr>
+			  <tr>
+			    <td>&nbsp;</td>
+			    <td> 
+				  <a href="#" onclick="newLogin();return false;"><img src="css/login/images/btn_login.png" height="53" width="129"></a>
+			    </td>
+			  </tr>
+				
+			<!--   <tr style="line-height:25px;"> -->
+			<!--     <td style="line-height:25px;">&nbsp;</td> -->
+			<!--     <td style="line-height:25px;">忘记密码？<a href="#">点击这里</a></td> -->
+			<!--   </tr> -->
+			   
+			   
+			 
+			</tbody></table>
+		</div> 
+	</div>
+	</div>
+
+	</form>  
+
+<div class="footer">power by <a href="http://www.vincesu.com">sumaorong</a></div>
+
+</body></html>

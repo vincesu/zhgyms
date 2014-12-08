@@ -1,0 +1,16 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<form id="upload-form" action="service/fileUpload" method="post" enctype="multipart/form-data" >
+	<input type="file" id="upload" name="upload" />
+	<button type="submit">上传</button>
+	<div id="message"></div>
+</form>
+<form id="BalanceDialogForm">
+	<fieldset>
+		<legend>基本信息</legend>
+		<div><p class="label_longer"></p><input type="hidden" name="type" value="20"><div style="clear:both"></div></div>
+		<div><p class="label_longer"></p><input type="hidden" id="id" name="id"><div style="clear:both"></div></div>
+		<div><p class="label_longer">名称：</p><input type="text" name="name"><div style="clear:both"></div></div>
+		<div><p class="label_longer">操作员(不必填写)：</p><input type="text" readonly="readonly" name="operator"><div style="clear:both"></div></div>
+		<div><p class="label_longer">上传时间(不必填写)：</p><input type="text" readonly="readonly" name="date"><div style="clear:both"></div></div>
+	</fieldset>
+</form>

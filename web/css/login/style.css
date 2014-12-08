@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, th, td {margin: 0;padding: 0;}
+body,button,input,select,textarea{font:12px/1 Tahoma,Arial,\5b8b\4f53; color:#333333;}
+h1 {font-size: 18px;}
+h2 {font-size: 16px;}
+h3 {font-size: 14px;}
+h4, h5, h6 {font-size: 100%;}
+address, cite, dfn, em, var {font-style: normal;} 
+code, kbd, pre, samp, tt {font-family: "Courier New", Courier, monospace;} 
+small {font-size: 12px;}
+ul, ol {list-style: none;}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+abbr[title], acronym[title] {border-bottom: 1px dotted;cursor: help;}
+q:before, q:after {content: '';}
+legend {color: #000;}
+fieldset, img {border: none;}
+button, input, select, textarea {font-size: 100%;}
+table {border-collapse: collapse;border-spacing: 0;}
+hr {border: none;height: 1px;}
+*html {overflow-y: scroll; }
+*+html {overflow-y: scroll; }
+
+
+
+
+
+body {
+	font-size: 12px; padding:0px; margin:0px;}
+	
+.top{ height:60px; background:url(images/top_bg.gif) repeat-x; border-bottom:2px #fff solid;}
+
+.top_logo{ width:980px; margin:0 auto; height:60px; display:block; background:url(images/top_logo.png) left no-repeat;}
+
+.pic_bg{ background:#c2d9f0; height:386px; border-top:#7ba5d2 2px solid; }
+.bigpic{ width:980px; margin:0 auto; height:386px; display:block; background:url(images/bigpic.gif) no-repeat;}
+
+.box_input{ width:351px; height:329px; margin-top:30px; float:right; _background: none; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/load_box.png.png", enabled=true, sizingMethod=noscale ); background:url(images/load_box.png) no-repeat; } 
+.input_tab{ margin:76px auto 0 auto; width:76%;}
+.input_tab td{ line-height:48px;}
+.input_tab_lefttd{ width:60px; font-size:14px; text-align:right;}
+.input_box_a{ width:200px; height:28px;font-size:14px;padding-left:5px; border:1px solid #397eb5; line-height:28px;}
+
+
+.linkbox{ margin:0 auto; width:980px; height:36px; line-height:36px; text-align:left; color:#666;}
+.linkbox b{ }
+.linkbox a{ padding:0 12px; color:#333;}
+
+.footer{ padding-top:12px; background:url(images/foot_bg.gif) repeat-x; text-align:center; line-height:24px; color:#666;}
+
+
+
+/*
+
+*/
+
+.login_tool{ line-height:36px; padding:5px 0 8px 90px; text-align:left; background:url(images/btn_login.png) top center no-repeat; color:#555;}

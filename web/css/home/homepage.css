@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+body {font: 12px/16px 'century gothic','Microsoft Yahei','NSimSun',Helvetica,Arial,sans-serif;
+color: rgb(39, 39, 39);}
+h2 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    color: rgb(62, 103, 155);
+    font-size: 18px;
+}
+a {
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+}
+h3 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    color: rgb(62, 70, 77);
+    font-weight: normal;
+}
+#content-header-pic {
+	background-color: #f7f8f7;
+	margin:auto 0px;
+	height: 410px;
+}
+
+.content-wrapper {
+    width: 1020px;
+    margin: 0px auto;
+}
+
+#content-main {
+	width: 100%;
+	background: url("../../images/content_bg2.png") repeat-x scroll left top rgb(255, 255, 255);
+/* 	background-color: #c9defa; */
+	padding: 2px 0px 0px;
+}
+
+.content-div {
+	float: left;
+	line-height: 1.7em;
+/* 	height: 350px; */
+}
+#content-left {
+	width: 25%;
+}
+
+#content-right {
+	width: 30%;
+}
+
+#content-mid {
+	width: 45%;
+}
+
+.sidebar_box_height {height:296px;}
+
+.content-box {
+	height: 100%;
+	width:100%;
+	padding: 10px 15px;
+	margin: 15px 8px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+/* 	background: #fff; */
+}
+.sidebar_box {
+    padding: 10px 15px;
+    margin: 15px 8px;
+/*     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2); */
+}
+.information_box {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+.bottomborder {
+    border-bottom: 1px dashed rgb(138, 155, 168);
+}
+#menu {background: url("menu_bg2.jpg") repeat-x scroll 0% 0% transparent; height: 37px;}
+#menumain {width: 1020px;height: 100%;margin: 0px auto;}
+#menu .item {
+	float:right;
+/* 	margin-right: 10px; */
+}
+#menu a {
+	background: url("bg_button_a.png") no-repeat scroll right top transparent;
+	color: rgb(68, 68, 68);
+	display: block;
+	float: right;
+	font: 12px arial,sans-serif;
+	height: 24px;
+	margin-right: 45px;
+	padding-right: 18px;
+	text-decoration: none;
+	margin-top: 8px;
+}
+
+#menu a span {
+	background: url("bg_button_span.png") no-repeat scroll 0% 0% transparent;
+	display: block;
+	line-height: 14px;
+	padding: 5px 0px 5px 18px;
+}
+
+#menu .hidebg {background: none repeat scroll 0% 0% transparent;}
+/* #menu .button {margin-top:5px;} */
+
+.myborder {border-width: 1px; border-style: solid; padding: 1px;}
+.a {background-color: #F3F3F3; border-color: #FBFBFB;}
+.b {background-color: #D8D8D8; border-color: #E8E8E8;}
+.c {background: url(../../images/sidebar-bg2-g.png) repeat-x #FFF; border-color: #BBB;}
